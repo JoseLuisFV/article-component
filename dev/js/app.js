@@ -1,8 +1,5 @@
-const shareButton = document.querySelector('.button--share');
-const shareMenu = document.querySelector('.share__menu--close')
-
-console.log(shareButton);
-console.log(shareMenu);
+const shareButton = document.getElementById('share-button')
+const shareMenu = document.querySelector('.share__menu--close');
 
 const changeStateMenu = () => {
     if (shareMenu.classList.contains('share__menu--close')){

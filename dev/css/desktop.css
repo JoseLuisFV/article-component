@@ -4,7 +4,7 @@ main {
 
 .master-card {
     flex-direction: row;
-    max-width: 740px;
+    max-width: 790px;
     width: 100%;
     margin: 0px auto 60px;
     overflow: visible;
@@ -12,7 +12,7 @@ main {
 
 .master-card .image {
     display: block;
-    width: 38%;
+    width: 40%;
     height: auto;
     background-image: url('../images/drawers.jpg');
     background-size: cover;
@@ -21,22 +21,27 @@ main {
 }
 
 .master-card__body {
-    width: 62%;
+    width: 60%;
+    padding-bottom: 20px
 }
 
 .master-card__title,
 .master-card__content {
-    padding: 0px 32px;
+    padding: 0px 36px;
+    margin-bottom: 18px;
 }
 
+.master-card__title {
+    font-size: 1.9rem;
+}
 
 .share__menu--open {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 .button--share {
-    margin-right: 32px
+    margin-right: 36px
 }
 
 .share__menu--close {
@@ -54,7 +59,7 @@ main {
 
 .share__menu--open {
     top: calc(0% - 48px);
-    left: calc(50% + 60px);
+    left: calc(50% + 65px);
     justify-content: center;
     gap: 16px;
     height: 52px;
@@ -68,7 +73,7 @@ main {
 .share__menu--open::after,
 .share__menu--close::after {
     position: absolute;
-    bottom: -16px;
+    bottom: -14px;
     left: calc(50% - 13px);
     content: '';
     display: block;
