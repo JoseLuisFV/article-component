@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    position: relative;
+    min-height: 100vh; 
+    padding-top: 60px;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.furniture {
+    min-height: 500px;
+    min-width: 320px;
+}
+
+.master-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 400px;
+    width: 90%;
+    margin: 0px auto 60px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 15px 20px -2px rgba(0,0,0,0.45);
+}
+
+.master-card .image {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    background-image: url('../images/drawers.jpg');
+    background-size: cover;
+}
+
+.master-card__body {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px 0px;
+}
+
+.master-card__title {
+    padding: 0px 28px;
+    font-family: 'Manrope' sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: hsl(217, 19%, 35%);
+}
+
+.master-card__content {
+    padding: 0px 28px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 26px;
+    color: hsl(214, 17%, 51%);
+}
+
+.master-card__share-conteiner {
+    position: relative;
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+
+.master-card__share-conteiner .profile__img {
+    margin-left: 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.profile__details {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+.profile__details--name {
+    font-size: 1.3rem;
+    color:hsl(217, 19%, 35%);
+}
+
+.profile__details--date {
+    color: hsl(212, 23%, 69%);
+}
+
+
+.button--share {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: 28px;
+    background: url('../images/icon-share.svg'), hsl(210, 46%, 95%);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    border-radius: 30px;
+    z-index: 10;
+}
+
+.share__menu--close {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 0px;
+    gap: 18px;
+    right: 0;
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: hsl(217, 19%, 35%); 
+    transition: 0.2s ease
+}
+
+.share__menu--open {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    overflow: visible;
+    background-color: hsl(217, 19%, 35%); 
+    transition: 0.4s ease; 
+}
+
+.share__menu--open .text,
+.share__menu--close .text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: hsl(210, 46%, 95%)
+}
+
+.share__menu--open .icon,
+.share__menu--close .icon {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fb {
+    background-image: url('../images/icon-facebook.svg');
+}
+
+.twitter {
+    background-image: url('../images/icon-twitter.svg');
+}
+
+.pinterest {
+    background-image: url('../images/icon-pinterest.svg')
+}
