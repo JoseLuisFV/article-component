@@ -116,17 +116,19 @@ main {
     align-items: center;
     width: 0px;
     gap: 18px;
+    right: 0;
     height: 100%;
     padding-left: 0px;
     padding-right: 0px;
     overflow: hidden;
     background-color: hsl(217, 19%, 35%); 
-    transition: 0.4s ease
+    transition: 0.2s ease
 }
 
 .share__menu--open {
     display: flex;
     position: absolute;
+    right: 0;
     align-items: center;
     gap: 18px;
     height: 100%;
@@ -135,8 +137,7 @@ main {
     padding-right: 28px;
     overflow: visible;
     background-color: hsl(217, 19%, 35%); 
-    transition: 0.4s ease;
-    
+    transition: 0.4s ease; 
 }
 
 .share__menu--open .text,
