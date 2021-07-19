@@ -13,18 +13,13 @@ html {
 main {
     position: relative;
     min-height: 100vh; 
-    background-color: whitesmoke;
+    padding-top: 60px;
+    background-color:hsl(210, 46%, 95%);
 }
 
 .furniture {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     min-height: 500px;
     min-width: 320px;
-    margin: auto auto;
 }
 
 .master-card {
@@ -32,7 +27,7 @@ main {
     flex-direction: column;
     min-width: 320px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0px auto 60px;
     overflow: hidden;
     background-color: white;
     border-radius: 15px;
@@ -42,7 +37,7 @@ main {
 .master-card .image {
     display: block;
     width: 100%;
-    min-height: 260px;
+    min-height: 220px;
     background-image: url('../images/drawers.jpg');
     background-size: cover;
 }
@@ -50,10 +45,11 @@ main {
 .master-card__body {
     display: flex;
     flex-direction: column;
-    padding: 34px 20px 10px;
+    padding: 34px 0px 0px;
 }
 
 .master-card__title {
+    padding: 0px 20px;
     font-family: 'Manrope' sans-serif;
     font-size: 1.7rem;
     font-weight: 700;
@@ -62,6 +58,7 @@ main {
 }
 
 .master-card__content {
+    padding: 0px 20px;
     font-size: 1.5rem;
     line-height: 2.2rem;
     margin-bottom: 26px;
@@ -69,11 +66,14 @@ main {
 }
 
 .master-card__share-conteiner {
+    position: relative;
     display: flex;
+    height: 75px;
     align-items: center;
 }
 
 .master-card__share-conteiner .profile__img {
+    margin-left: 20px;
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -94,11 +94,11 @@ main {
 }
 
 
-.master-card__button--share {
+.button--share {
     width: 30px;
     height: 30px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 20px;
     background: url('../images/icon-share.svg'), hsl(210, 46%, 95%);
     background-size: 15px 15px;
     background-repeat: no-repeat;
@@ -108,27 +108,49 @@ main {
 }
 
 .share__menu {
-    display: none;
-}
-
-.caja {
-    display: block;
-    width: 60px;
-    height: 50px
-}
-
-.uno {
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 0px;
+    height: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
     background-color: hsl(217, 19%, 35%);
 }
 
-.dos {
-    background-color: hsl(214, 17%, 51%);
+.share__menu .text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: hsl(210, 46%, 95%)
 }
 
-.tres {
-    background-color: hsl(212, 23%, 69%);
+.share__menu .icon {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.cuatro {
-    background-color: hsl(210, 46%, 95%);
+.fb {
+    background-image: url('../images/icon-facebook.svg');
+}
+
+.twitter {
+    background-image: url('../images/icon-twitter.svg');
+}
+
+.pinterest {
+    background-image: url('../images/icon-pinterest.svg')
+}
+
+.share__menu .button--share {
+    height: 32px;
+    width: 32px;
+    margin-right: 0px;
+    margin-left: auto;
 }
